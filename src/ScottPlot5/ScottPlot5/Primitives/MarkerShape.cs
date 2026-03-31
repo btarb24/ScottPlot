@@ -33,7 +33,9 @@ public enum MarkerShape
     CircleWithLineLeft,
     CircleWithLineRight,
     TriangleWithLineLeft,
-    TriangleWithLineRight
+    TriangleWithLineRight,
+    EksWithLineLeft,
+    EksWithLineRight
 }
 
 public static class MarkerShapeExtensions
@@ -70,6 +72,8 @@ public static class MarkerShapeExtensions
             MarkerShape.CircleWithLineRight => new CircleWithLineRight(),
             MarkerShape.TriangleWithLineLeft => new TriangleWithLineLeft(),
             MarkerShape.TriangleWithLineRight => new TriangleWithLineRight(),
+            MarkerShape.EksWithLineLeft => new EksWithLineLeft(),
+            MarkerShape.EksWithLineRight => new EksWithLineRight(),
             MarkerShape.None => new None(),
             _ => throw new NotImplementedException(shape.ToString()),
         };
